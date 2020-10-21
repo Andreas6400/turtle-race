@@ -8,11 +8,13 @@ goto(-140,140)
 for step in range(15):
     write(step, align='center')
     right(90)
-    forward(10)
-    pendown()
-    forward(210)
+    for num in range(7):
+        penup()
+        forward(15)
+        pendown()
+        forward(15)
     penup()
-    backward(220)
+    backward(210)
     left(90)
     forward(20)
     
