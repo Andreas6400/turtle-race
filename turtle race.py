@@ -26,6 +26,9 @@ schildk1.penup()
 schildk1.goto(-160, 100)
 schildk1.pendown()
 
+for turn in range(10):
+    schildk1.right(36)
+
 schildk2 = Turtle()
 schildk2.color('blue')
 schildk2.shape('turtle')
@@ -33,6 +36,9 @@ schildk2.shape('turtle')
 schildk2.penup()
 schildk2.goto(-160, 70)
 schildk2.pendown()
+
+for turn in range(10):
+    schildk2.right(36)
 
 schildk3 = Turtle()
 schildk3.color('yellow')
@@ -42,6 +48,9 @@ schildk3.penup()
 schildk3.goto(-160, 40)
 schildk3.pendown()
 
+for turn in range(10):
+    schildk3.right(36)
+
 schildk4 = Turtle()
 schildk4.color('green')
 schildk4.shape('turtle')
@@ -49,6 +58,9 @@ schildk4.shape('turtle')
 schildk4.penup()
 schildk4.goto(-160, 10)
 schildk4.pendown()
+
+for turn in range(10):
+    schildk4.right(36)
 
 schildk5 = Turtle()
 schildk5.color('brown')
@@ -58,6 +70,9 @@ schildk5.penup()
 schildk5.goto(-160, -20)
 schildk5.pendown()
 
+for turn in range(10):
+    schildk5.right(36)
+
 schildk6 = Turtle()
 schildk6.color('black')
 schildk6.shape('turtle')
@@ -65,6 +80,9 @@ schildk6.shape('turtle')
 schildk6.penup()
 schildk6.goto(-160, -50)
 schildk6.pendown()
+
+for turn in range(10):
+    schildk6.right(36)
 
 for turn in range(100):
     schildk1.forward(randint(1,5))
