@@ -1,13 +1,20 @@
+#import von 
 from turtle import *
 from random import randint
 
+#geschwindkeit des Stiftes zum Zeichnen, eingefügt aus turtle
 speed(10)
+#stift aus
 penup()
+#postionswechsel zu x -140 y 140
 goto(-140,140)
 
+#erstellung des koordinatensystems
 for step in range(15):
+    #zahlen werden mittig an jede Spaltenstich angesetzt
     write(step, align='center')
     right(90)
+    #Stiche der Spalten werden unterbrochen dargestellt
     for num in range(7):
         penup()
         forward(15)
@@ -17,15 +24,19 @@ for step in range(15):
     backward(210)
     left(90)
     forward(20)
-    
+
+#Schildkröten werden erstellt und eigentschaften zugewiesen
 schildk1 = Turtle()
 schildk1.color('red')
 schildk1.shape('turtle')
 
+#stift an/ aus; postionswechsel
 schildk1.penup()
 schildk1.goto(-160, 100)
 schildk1.pendown()
 
+#drehung einer schildkröte - range(10) 0-9
+#drehung der schildkröte hier 10 mal 36 Grad = 360 Grad
 for turn in range(10):
     schildk1.right(36)
 
@@ -37,8 +48,10 @@ schildk2.penup()
 schildk2.goto(-160, 70)
 schildk2.pendown()
 
-for turn in range(10):
-    schildk2.right(36)
+#drehung einer schildkröte - range(10) 0-9
+#drehung der schildkröte hier 72 mal 5 Grad = 360 Grad
+for turn in range(72):
+    schildk2.right(5)
 
 schildk3 = Turtle()
 schildk3.color('yellow')
@@ -84,6 +97,7 @@ schildk6.pendown()
 for turn in range(10):
     schildk6.right(36)
 
+#die schildk bewegt sich jede Runde zwischen 
 for turn in range(100):
     schildk1.forward(randint(1,5))
     schildk2.forward(randint(1,5))
@@ -91,3 +105,8 @@ for turn in range(100):
     schildk4.forward(randint(1,5))
     schildk5.forward(randint(1,5))
     schildk6.forward(randint(1,5))
+    
+#schildkroten= [schildk1,schildk2, schildk3, schildk4, schildk5, schildk6]
+    #if(schildkroten.getscreen()==schildkroten.goto(null,-60):
+    #   for turn in range(1):
+    #   schildkroten.right(360)
